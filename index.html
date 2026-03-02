@@ -1,91 +1,97 @@
-<!DOCTYPE html><html lang="pt">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tabela Periódica</title>
-  <link rel="stylesheet" href="styles.css">
-  <style>
-    .botao-canto {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #4CAF50;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-      font-size: 16px;
-      z-index: 1000;
-      transition: background-color 0.3s ease;
-    }.botao-canto:hover {
-  background-color: #45a049;
-}
+  <title>Tabela Periódica Interativa</title>
 
-  </style>
+  <!-- Linke seu CSS aqui -->
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <h1>Tabela Periódica</h1>  <div class="groups-list">
-    <div class="groups-left">
-      <div class="group-item">
-        <div class="color-box alkali"></div>
-        <span>Alcalinos</span>
-      </div>
-      <div class="group-item">
-        <div class="color-box alkaline"></div>
-        <span>Terrosos Alcalinos</span>
-      </div>
-      <div class="group-item">
-        <div class="color-box transition"></div>
-        <span>Metais de Transição</span>
-      </div>
-      <div class="group-item">
-        <div class="color-box post-transition"></div>
-        <span>Metais Pós‑Transição</span>
-      </div>
-      <div class="group-item">
-        <div class="color-box metalloid"></div>
-        <span>Metaloides</span>
-      </div>
-    </div>
-    <div class="groups-right">
-      <div class="group-item">
-        <div class="color-box non-metal"></div>
-        <span>Não Metais</span>
-      </div>
-      <div class="group-item">
-        <div class="color-box halogen"></div>
-        <span>Halogênios</span>
-      </div>
-      <div class="group-item">
-        <div class="color-box noble-gas"></div>
-        <span>Gases Nobres</span>
-      </div>
-      <div class="group-item">
-  <span class="color-box lanthanide"></span>
-  Lantanídeos
-</div>
 
-<div class="group-item">
-  <span class="color-box actinide"></span>
-  Actinídeos
-</div>
+<body>
+
+  <h1>Tabela Periódica</h1>
+
+  <!-- 🔥 LEGENDA DOS GRUPOS -->
+  <div class="groups-list">
+
+    <div class="group-item">
+      <span class="color-box alkali"></span>
+      Alcalinos
     </div>
-  </div>  <div class="main-container">
-    <div id="periodicTable" class="container"></div>
-  </div>  <div id="element-summary">
+
+    <div class="group-item">
+      <span class="color-box alkaline"></span>
+      Terrosos Alcalinos
+    </div>
+
+    <div class="group-item">
+      <span class="color-box transition"></span>
+      Metais de Transição
+    </div>
+
+    <div class="group-item">
+      <span class="color-box post-transition"></span>
+      Metais Pós-Transição
+    </div>
+
+    <div class="group-item">
+      <span class="color-box metalloid"></span>
+      Metaloides
+    </div>
+
+    <div class="group-item">
+      <span class="color-box non-metal"></span>
+      Não Metais
+    </div>
+
+    <div class="group-item">
+      <span class="color-box halogen"></span>
+      Halogênios
+    </div>
+
+    <div class="group-item">
+      <span class="color-box noble-gas"></span>
+      Gases Nobres
+    </div>
+
+    <div class="group-item">
+      <span class="color-box lanthanide"></span>
+      Lantanídeos
+    </div>
+
+    <div class="group-item">
+      <span class="color-box actinide"></span>
+      Actinídeos
+    </div>
+
+  </div>
+
+  <!-- 🔥 CONTAINER PRINCIPAL -->
+  <div class="main-container">
+    <div id="periodicTable"></div>
+  </div>
+
+  <!-- 🔥 OVERLAY DO RESUMO -->
+  <div id="element-summary">
     <div id="summary-content">
+
       <div class="summary-left">
         <img id="summary-image" src="" alt="Imagem do Elemento">
       </div>
+
       <div class="summary-right">
         <button onclick="closeElement()">Voltar</button>
       </div>
+</div>  <!-- Botão para acessar o jogo da memória -->  <a href="http://icaroabg.github.io/Abegoti/" target="_blank">
     </div>
-  </div>  <!-- Botão para acessar o jogo da memória -->  <a href="http://icaroabg.github.io/Abegoti/" target="_blank">
-    <button class="botao-canto">Ir para o jogo</button>
-  </a>  <script src="script.js"></script></body>
+  </div>
+
+  <!-- 🔥 Seu JavaScript -->
+  <script src="script.js"></script>
+
+</body>
 </html>
 
 
