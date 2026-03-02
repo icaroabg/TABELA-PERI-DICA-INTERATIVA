@@ -32,46 +32,19 @@ h1 {
 }
 
 /* ========= LEGENDA (GRUPOS) ========= */
-/* ====== ENCOLHER A LEGENDA ====== */
-.groups-list{
-  width: min(780px, 92vw);   /* antes: 900px */
-  padding: 8px 10px;         /* antes: 12px 14px */
-  gap: 10px;                 /* antes: 14px */
-  border-radius: 10px;
-}
-
-.group-item{
-  font-size: 12px;           /* antes: 14px */
-  gap: 8px;
-}
-
-.color-box{
-  width: 14px;               /* antes: 18px */
-  height: 14px;
-  border-radius: 3px;
-}
-
-.group-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #fff;
-  font-size: 14px;
-}
-
-.color-box {
-  width: 18px;
-  height: 18px;
-  border-radius: 4px;
-  border: 1px solid rgba(255,255,255,0.25);
-}
-
-/* ========= CONTAINER PRINCIPAL ========= */
-.main-container {
-  width: 100%;
+.groups-list {
   display: flex;
   justify-content: center;
-  padding: 10px 12px 40px;
+  flex-wrap: wrap;
+  gap: 14px;
+
+  width: min(900px, 95vw);
+  margin: 10px auto 18px;
+  padding: 12px 14px;
+
+  border-radius: 12px;
+  background-color: rgba(0,0,0,0.45);
+  backdrop-filter: blur(4px);
 }
 
 /* ========= GRADE DA TABELA (RESPONSIVA) ========= */
@@ -281,6 +254,7 @@ button:hover {
     width: 100%;
   }
 }
+
 
 
 
