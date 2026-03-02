@@ -47,6 +47,29 @@ h1 {
   backdrop-filter: blur(4px);
 }
 
+.group-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.color-box {
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+/* ========= CONTAINER PRINCIPAL ========= */
+.main-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px 12px 40px;
+}
+
 /* ========= GRADE DA TABELA (RESPONSIVA) ========= */
 #periodicTable {
   display: grid;
@@ -254,11 +277,6 @@ button:hover {
     width: 100%;
   }
 }
-
-
-
-
-
 
 
 
