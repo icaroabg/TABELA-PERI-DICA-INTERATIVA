@@ -124,18 +124,27 @@ h1 {
   font-size: 12px;
 }
 
-/* Cores */
+/* Cores dos elementos */
 .alkali { background-color: brown; }
-.alkaline { background-color: yellow; color: #000; }
+.alkaline { background-color: yellow; 
+color: #000; }
 .transition { background-color: red; }
 .post-transition { background-color: grey; }
 .metalloid { background-color: blue; }
 .non-metal { background-color: cyan; color: #000; }
 .halogen { background-color: pink; color: #000; }
 .noble-gas { background-color: purple; }
-.lanthanoid { background-color: #f4a460; color: #000; }
-.actinoid { background-color: #cd5c5c; color: #000; }
+.lanthanoid { background-color: #f4a460; }
+.actinoid { background-color: #cd5c5c; color: #fff; }
+.lanthanide {
+  background-color: #f4a460; /* Um tom de roxo claro */
+  color: #000;
+}
 
+.actinide {
+  background-color: #cd5c5c; /* Um tom de vermelho claro */
+  color: #000;
+}
 /* Overlay */
 #element-summary {
   position: fixed;
@@ -190,6 +199,7 @@ h1 {
     flex-direction: column;
   }
 }
+
 
 
 
