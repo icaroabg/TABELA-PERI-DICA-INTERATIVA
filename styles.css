@@ -133,8 +133,8 @@ h1 {
 .non-metal { background-color: cyan; color: #000; }
 .halogen { background-color: pink; color: #000; }
 .noble-gas { background-color: purple; }
-.lanthanide { background-color: #f4a460; color: #000; }
-.actinide { background-color: #cd5c5c; color: #000; }
+.lanthanoid { background-color: #f4a460; color: #000; }
+.actinoid { background-color: #cd5c5c; color: #000; }
 
 /* Overlay */
 #element-summary {
@@ -190,6 +190,7 @@ h1 {
     flex-direction: column;
   }
 }
+
 
 
 
