@@ -282,7 +282,39 @@ button {
 button:hover {
   background-color: #0056b3;
 }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 
+.content {
+    height: 100vh; /* Para garantir que o conteúdo ocupe a tela toda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-game-atômico {
+    position: fixed;
+    bottom: 20px;  /* Distância do botão do fundo da tela */
+    right: 20px;   /* Distância do botão da borda direita */
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.btn-game-atômico:hover {
+    background-color: #2980b9;
+}
 /* ========= RESPONSIVO ========= */
 @media (max-width: 768px) {
   #periodicTable {
@@ -303,5 +335,6 @@ button:hover {
     width: 100%;
   }
 }
+
 
 
